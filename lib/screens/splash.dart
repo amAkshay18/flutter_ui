@@ -28,8 +28,10 @@ class _ScreenSplashState extends State<ScreenSplash> {
   Future<void> start() async {
     await Future.delayed(const Duration(seconds: 3));
     // ignore: use_build_context_synchronously
-    Navigator.of(context).pushReplacement(MaterialPageRoute(
-      builder: (context) => const HomeScreen(),
-    ));
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (context) => const HomeScreen(),
+      ),
+    );
   }
 }
